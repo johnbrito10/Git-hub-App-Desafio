@@ -70,10 +70,10 @@ public class UserDetailActivity extends AppCompatActivity {
 
         mItems = (Items) getIntent().getSerializableExtra(ITEMS);
 
-        // Inicializa el metdo AsynTask
+        // Inicializa AsynTask
         new HttpRequestTask().execute();
 
-        // Evento para actualizar la información
+        // Evento Atualiza Informações
         mDetailUserSwipeRefreshLayout.setOnRefreshListener(new
                                                                    SwipeRefreshLayout.OnRefreshListener() {
                                                                        @Override
